@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.desktop {
+    background: url(./assets/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.shortcut {
+    width: 92px;
+    height: 85px;
+    flex-direction: column;
+    transition: 0.1s linear transform;
+    align-items: center;
+    text-align: center;
+}
+
+.shortcut:hover {
+    background-color: rgba(255, 255, 255, 0.093);
+}
+
+.shortcut p {
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+.start {
+    position: absolute;
+    padding: 20px;
+    bottom: 7%;
+    left: 28%;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 80vh;
+    background: linear-gradient(to right, rgba(24, 25, 25, 0.51), rgba(24, 25, 25, 0.51), rgba(24, 25, 25, 0.51));
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pinned {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.start .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-t);
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.start .title .more {
+    background-color: rgba(220, 220, 220, 0.074);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.apps {
+    position: relative;
+    width: 122px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s linear transform;
+}
+
+.apps:active {
+    transform: scale(0.9);
+}
+
+.apps img {
+    height: 38px;
+    width: 38px;
+}
+
+.apps p {
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+.apps:hover {
+    background-color: rgba(220, 220, 220, 0.074);
+    border-radius: 5px;
+}
+
+.recommended{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+
+.recommended .recent{
+    width: 47%;
+    height: 80px;
+    margin: 0px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recommended .recent img{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+.recommended .recent p{
+    margin-left: 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+.recent:hover {
+    background-color: rgba(220, 220, 220, 0.074);
+    border-radius: 5px;
+}
+
+.taskbar {
+    position: fixed;
+    width: 100vw;
+    height: 45px;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(24, 25, 25, 0.8), rgba(24, 25, 25, 0.8), rgba(24, 25, 25, 0.8));
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s linear transform;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.icon:hover {
+    background-color: rgba(220, 220, 220, 0.074);
+    border-radius: 5px;
+}
+
+.icon:active {
+    transform: scale(0.9);
+}
+
+.taskbar>.middle-icons {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+
+.taskbar>.middle-icons img {
+    width:28px;
+    height:28px;
+    padding:10px;
+    border-radius: 5px;
+}
+
+ #time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
